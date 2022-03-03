@@ -1,0 +1,42 @@
+{
+  "name": "emerald-react",
+  "version": "1.0.0",
+  "description": "A react component library that laverages the power of react hooks and the beauty of the emerald design system",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "keywords": [
+    "emerald",
+    "design",
+    "system",
+    "react",
+    "library",
+    "components",
+    "css"
+  ],
+  "author": "Haroune Kechaoui",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@storybook/addon-actions": "^6.4.19",
+    "@storybook/addon-essentials": "^6.4.19",
+    "@storybook/addon-interactions": "^6.4.19",
+    "@storybook/addon-links": "^6.4.19",
+    "@storybook/addon-postcss": "^2.0.0",
+    "@storybook/react": "^6.4.19",
+    "@storybook/testing-library": "^0.0.9",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "autoprefixer": "^10.4.2",
+    "babel-loader": "^8.2.3",
+    "postcss": "^8.4.7",
+    "tailwindcss": "^3.0.23"
+  }
+}
