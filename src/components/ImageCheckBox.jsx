@@ -1,6 +1,6 @@
 
 
-const ImageCheckBox = (props) => {
+export const ImageCheckBox = (props) => {
 
     let checkOverlay;
 
@@ -32,5 +32,3 @@ const ImageCheckBox = (props) => {
         </div>
     )
 }
-
-export default ImageCheckBox;
