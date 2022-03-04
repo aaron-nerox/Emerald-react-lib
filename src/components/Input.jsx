@@ -102,7 +102,7 @@ export const ActionInput = (props) => {
     }
 
     return (
-        <div className={`h-fit px-3 m-3 py-1
+        <div className={`h-fit pl-3 pr-1 m-3 py-1
         inline-flex flex-row items-center rounded-lg ${bg} ${props.EmeraldStyle}`}>
             <input 
                 disabled={props.disabled}
