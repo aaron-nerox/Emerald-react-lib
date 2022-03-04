@@ -1,74 +1,40 @@
-import { RoundCheckBox, RoundLineCheckBox, SquareCheckBox, SquareLineCheckBox } from "../index";
+import { TopNav } from "../index";
+import Logo from "../assets/images/logo.png";
+import Icon from "../assets/icons/eye.svg"
 
 export default {
-    title: "Components/Navigation",
-    component: RoundCheckBox,
+    title: "Navigation/TopNav",
+    component: TopNav,
     argTypes: {
-        onCheckChange: {action: 'check changed'}
+        onMainLogoClick: {action: "Main logo clicked"},
+        onItemClick: {action: `Item index clicked`}
     }
 }
 
-const TemplateRound = (args) => {
+const Template = (args) => {
     return (
-        <RoundCheckBox {...args} />
+        <TopNav {...args} />
     )
 }
 
-const TemplateSquare = (args) => {
-    return (
-        <SquareCheckBox {...args} />
-    )
-}
+let items = [
+    {
+        icon: Icon,
+        title: "Nav Item"
+    },
+    {
+        icon: Icon,
+        title: "Nav Item"
+    },
+    {
+        icon: Icon,
+        title: "Nav Item"
+    },
+]
 
-const TemplateSquareLine = (args) => {
-    return (
-        <SquareLineCheckBox {...args} />
-    )
-}
-
-const TemplateRoundLine = (args) => {
-    return (
-        <RoundLineCheckBox {...args} />
-    )
-}
-
-export const Round = TemplateRound.bind({});
-Round.args = {
-    EmeraldStyle: '',
-    checked: true,
-    disabled: false,
-    name: 'name',
-    value: 'name',
-
-}
-
-export const RoundLine = TemplateRoundLine.bind({});
-RoundLine.args = {
-    EmeraldStyle: '',
-    checked: true,
-    disabled: false,
-    name: 'name',
-    value: 'name',
-
-}
-
-export const Square = TemplateSquare.bind({});
-Square.args = {
-    EmeraldStyle: '',
-    checked: true,
-    disabled: false,
-    name: 'name',
-    value: 'name',
-
-}
-
-export const SquareLine = TemplateSquareLine.bind({});
-SquareLine.args = {
-    EmeraldStyle: '',
-    checked: true,
-    disabled: false,
-    name: 'name',
-    value: 'name',
-
+export const Top = Template.bind({});
+Top.args = {
+    mainLogo: Logo,
+    navItems: items
 }
 

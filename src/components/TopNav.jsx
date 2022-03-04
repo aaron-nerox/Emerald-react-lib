@@ -6,8 +6,8 @@ export const TopNav = (props) => {
     let navItems = props.navItems;
 
     return (
-        <div className="w-[99%] h-[64px] m-2 px-3 rounded-xl bg-primary-screen fixed 
-        top-0 z-10 inline-flex flex-row items-center">
+        <div className="w-full h-[64px] px-3 rounded-b-lg bg-primary-screen fixed 
+        top-0 left-0 right-0 z-10 inline-flex flex-row items-center">
             <img src={mainLogo} alt="main logo" className="h-11" onClick={props.onMainLogoClick}/>
             <ul className="inline-flex flex-row items-center absolute right-1">{
                 navItems.map((item, index) => {

@@ -1,4 +1,3 @@
-import { RoundCheckBox, RoundLineCheckBox, SquareCheckBox, SquareLineCheckBox } from "../index";
 import {Input, PasswordInput, ActionInput } from "../index";
 import icon from '../assets/icons/send.svg';
 
@@ -6,7 +5,8 @@ export default {
     title: "Components/Input",
     component: Input,
     argTypes: {
-        onValueChange: {action: 'value changed'}
+        onValueChange: {action: 'value changed'},
+        onActionClick: {action: 'action button clicked'}
     }
 }
 
