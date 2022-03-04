@@ -7,3 +7,4 @@ export * from './components/ImageCheckBox';
 export * from './components/Input';
 export * from './components/SideNav';
 export * from './components/SideScaffold';
+export * from './components/TopNav';

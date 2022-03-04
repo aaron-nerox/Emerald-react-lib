@@ -1,7 +1,6 @@
 import { Button, TextButton, IconifiedButton } from '../index';
 import { ButtonIcon } from '../components/Button';
 import Icon from '../assets/icons/musicnote.svg';
-import '../index.css';
 
 export default {
     title: "Components/Button",

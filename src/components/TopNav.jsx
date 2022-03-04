@@ -1,6 +1,6 @@
 
 
-const TopNav = (props) => {
+export const TopNav = (props) => {
 
     let mainLogo = props.mainLogo;
     let navItems = props.navItems;
@@ -25,5 +25,3 @@ const TopNav = (props) => {
         </div>
     )
 }
-
-export default TopNav;

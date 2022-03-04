@@ -18,5 +18,4 @@ CheckableImage.args = {
     checked: true,
     src: Image,
     EmeraldStyle: 'w-[300px] h-[200px]',
-
 }
