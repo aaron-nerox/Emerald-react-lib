@@ -6,12 +6,12 @@ export const Column = (props) => {
 
     let cssAlignment;
 
-    if(alignment === "center"){
-        cssAlignment = "items-center"
-    }else if(alignment === "start"){
+    if(alignment.toUpperCase() === "START"){
         cssAlignment = "items-start"
-    }else{
+    }else if(alignment.toUpperCase() === "END"){
         cssAlignment = "items-end"
+    }else{
+        cssAlignment = "items-center"
     }
 
     return (
