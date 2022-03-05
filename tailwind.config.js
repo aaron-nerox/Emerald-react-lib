@@ -14,6 +14,7 @@ module.exports = {
     },
     extend: {
       borderRadius: {
+        'sm': '8px',
         'md': '10px',
         'lg': '15px',
         'xl': '20px',

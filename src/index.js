@@ -11,3 +11,4 @@ export * from './components/TopNav';
 export * from './components/Spacer';
 export * from './components/Column';
 export * from './components/Row';
+export * from './components/Switch';
