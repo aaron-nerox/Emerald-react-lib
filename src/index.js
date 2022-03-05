@@ -8,3 +8,6 @@ export * from './components/Input';
 export * from './components/SideNav';
 export * from './components/SideScaffold';
 export * from './components/TopNav';
+export * from './components/Spacer';
+export * from './components/Column';
+export * from './components/Row';
