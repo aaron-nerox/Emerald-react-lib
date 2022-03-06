@@ -17,5 +17,6 @@ export const CheckableImage = Template.bind({});
 CheckableImage.args = {
     checked: true,
     src: Image,
-    EmeraldStyle: 'w-[300px] h-[200px]',
+    height: '200px',
+    width: '300px'
 }

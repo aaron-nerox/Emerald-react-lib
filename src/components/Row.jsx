@@ -8,10 +8,14 @@ export const Row = (props) => {
 
     let cssAlignment;
 
-    if(alignment.toUpperCase() === "TOP"){
-        cssAlignment = "items-start"
-    }else if(alignment.toUpperCase() === "BOTTOM"){
-        cssAlignment = "items-end"
+    if(alignment){
+        if(alignment.toUpperCase() === "TOP"){
+            cssAlignment = "items-start"
+        }else if(alignment.toUpperCase() === "BOTTOM"){
+            cssAlignment = "items-end"
+        }else{
+            cssAlignment = "items-center"
+        }
     }else{
         cssAlignment = "items-center"
     }

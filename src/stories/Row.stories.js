@@ -13,15 +13,24 @@ const Template = (args) => {
             <ImageCheckBox 
                 checked={false}
                 src={Image}
-                EmeraldStyle='w-[150px] h-[120px] m-2'/>
+                height="150px"
+                width="150px"
+                EmeraldStyle="m-2"
+                />
             <ImageCheckBox 
                 checked={false}
                 src={Image}
-                EmeraldStyle='w-[150px] h-[150px] m-2'/>
+                height="150px"
+                width="150px"
+                EmeraldStyle="m-2"
+                />
             <ImageCheckBox 
                 checked={false}
                 src={Image}
-                EmeraldStyle='w-[150px] h-[100px] m-2'/>
+                height="150px"
+                width="150px"
+                EmeraldStyle="m-2"
+                />
         </Row>
     )
 }

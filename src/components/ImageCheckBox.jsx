@@ -2,6 +2,9 @@
 
 export const ImageCheckBox = (props) => {
 
+    const height = props.height;
+    const width = props.width;
+
     let checkOverlay;
 
     if(!props.checked){
@@ -12,12 +15,16 @@ export const ImageCheckBox = (props) => {
     
     
     return (
-        <div className="w-fit h-fit grid grid-cols-1 grid-rows-1 place-content-center 
-        place-items-center relative select-none" 
+        <div 
+            style={{height: height, width: width}}
+            className={`grid grid-cols-1 grid-rows-1 place-content-center 
+            place-items-center relative select-none overflow-clip ${props.EmeraldStyle}`}
             onClick={props.onCheckChange}>
-            <img src={props.src} 
+            <img
+                style={{height: height, width: width}} 
+                src={props.src} 
                 alt="checkImage" 
-                className={`rounded-xl object-cover ${props.EmeraldStyle}`}
+                className={`rounded-xl object-cover`}
             />
             <div className={`h-full w-full bg-primary/60 rounded-xl absolute ${checkOverlay} transition-all`}>
                 <svg xmlns="http://www.w3.org/2000/svg" 
