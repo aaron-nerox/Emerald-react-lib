@@ -14,3 +14,4 @@ export * from './components/Row';
 export * from './components/Switch';
 export * from './components/LazyImage';
 export * from './components/RadioInput';
+export * from './components/Grid';
