@@ -3,7 +3,8 @@
 export const Row = (props) => {
 
     const height = props.height;
-    const alignment = props.alignment
+    const alignment = props.alignment;
+    const style = props.EmeraldStyle;
 
     let cssAlignment;
 
@@ -17,7 +18,7 @@ export const Row = (props) => {
 
     return (
         <div style={{height: height}}
-            className={"inline-flex flex-row " + cssAlignment}>
+            className={`inline-flex flex-row ${style} ${cssAlignment}`}>
             {props.children}
         </div>
     )

@@ -29,5 +29,6 @@ const Template = (args) => {
 export const row = Template.bind({});
 row.args = {
     alignment: "top",
-    height: ""
+    height: "",
+    EmeraldStyle: ""
 }

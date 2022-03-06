@@ -2,7 +2,8 @@
 
 export const Column = (props) => {
     const width = props.width;
-    const alignment = props.alignment
+    const alignment = props.alignment;
+    const style = props.EmeraldStyle;
 
     let cssAlignment;
 
@@ -17,7 +18,7 @@ export const Column = (props) => {
     return (
         <div
             style={{width: width}}
-            className={"h-fit inline-flex flex-col " + cssAlignment}>
+            className={`h-fit inline-flex flex-col ${style} ${cssAlignment}`}>
             {props.children}
         </div>
     )
