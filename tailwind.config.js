@@ -11,9 +11,11 @@ module.exports = {
       'disabled': '#D9D9D9',
       'disabled-dark': '#8C8C8C',
       'primary-surface-black': "#222222",
+      'transparent': '#00000000'
     },
     extend: {
       borderRadius: {
+        'tn': '6px',
         'sm': '8px',
         'md': '10px',
         'lg': '15px',
