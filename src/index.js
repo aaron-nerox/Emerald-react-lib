@@ -12,3 +12,4 @@ export * from './components/Spacer';
 export * from './components/Column';
 export * from './components/Row';
 export * from './components/Switch';
+export * from './components/LazyImage';
