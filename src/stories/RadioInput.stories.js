@@ -19,7 +19,8 @@ roundedRadioGroup.args = {
     options: ['one', 'two', 'three'],
     index: 0,
     disabled: false,
-    orientation: "vertical"
+    orientation: "vertical",
+    emeraldColor: ""
 }
 
 const TemplateSquare = (args) => {
@@ -33,5 +34,6 @@ squareRadioGroup.args = {
     options: ['one', 'two', 'three'],
     index: 0,
     disabled: false,
-    orientation: "vertical"
+    orientation: "vertical",
+    emeraldColor: '',
 }

@@ -1,10 +1,9 @@
 
-
-//options: array of strings
-//onRadioSelected: action to know the current selection default is the first
-//disabled: if the group is disabled or not
-//orientation: vertical or horizontal (default vertical)
-
+/**
+ * 
+ * @param {options, disabled, orientation, index, emeraldColor} props 
+ * @returns 
+ */
 export const RadioGroup = (props) => {
     const items = props.options;
     const isDisabled = props.disabled;
@@ -36,28 +35,30 @@ export const RadioGroup = (props) => {
                     selected={(selectedIndex === index)}
                     key={index}
                     option={item}
-                    EmeraldStyle={itemMargin}
+                    color={props.emeraldColor}
                     />
             })
         }</div>
     )
 }
 
+/**
+ * 
+ * @param {options, disabled, orientation, index, emeraldColor} props 
+ * @returns 
+ */
 export const SquareRadioGroup = (props) => {
     const items = props.options;
     const isDisabled = props.disabled;
     const orientation = props.orientation;
     let displayStyle ="";
-    let itemMargin =""
     let selectedIndex = (props.index)? props.index : 0
 
 
     if(orientation.toUpperCase() === "HORIZONTAL"){
         displayStyle = "flex-row items-center"
-        itemMargin = "mx-2"
     }else{
         displayStyle = "flex-col items-start"
-        itemMargin = ""
     }
 
     function handleItemSelection(index){
@@ -75,17 +76,24 @@ export const SquareRadioGroup = (props) => {
                     selected={(selectedIndex === index)}
                     key={index}
                     option={item}
-                    EmeraldStyle={itemMargin}
+                    color={props.emeraldColor}
                     />
             })
         }</div>
     )
 }
 
+/**
+ * 
+ * @param {disabled, selected, color, option, onItemSelected} props 
+ * @returns 
+ */
 const RadioButton = (props) => {
 
     let outlineColor;
     let backgroundColor;
+    let outlineStyle = {};
+    let innerStyle = {};
 
     if(props.disabled){
         outlineColor = "outline-emerald-disabled-dark"
@@ -94,6 +102,8 @@ const RadioButton = (props) => {
         if(props.selected){
             outlineColor = "outline-emerald-primary"
             backgroundColor = "bg-emerald-primary"
+            outlineStyle = {outlineColor: props.color}
+            innerStyle = {backgroundColor: props.color}
         }else{
             outlineColor = "outline-emerald-disabled"
             backgroundColor = "bg-emerald-transparent"
@@ -107,21 +117,33 @@ const RadioButton = (props) => {
     }
 
     return (
-        <div className={`inline-flex flex-row items-center ${props.EmeraldStyle}`}
+        <div className={`inline-flex flex-row items-center m-2`}
             onClick={handleItemSelection}>
-            <div className={`w-[25px] h-[25px] m-2 p-[2px]
+            <div
+                style={outlineStyle}
+                className={`w-[25px] h-[25px] mx-3 p-[2px]
                 rounded-full outline outline-3 ${outlineColor}`}>
-                    <div className={`w-full h-full rounded-full ${backgroundColor}`}></div>
+                    <div 
+                        style={innerStyle}
+                        className={`w-full h-full rounded-full 
+                        ${backgroundColor}`}></div>
             </div>
-            <p className="ml-1">{props.option}</p>
+            <p className="mr-2">{props.option}</p>
         </div>
     )
 }
 
+/**
+ * 
+ * @param {disabled, selected, color, option, onItemSelected} props 
+ * @returns 
+ */
 const SquareRadioButton = (props) => {
 
     let outlineColor;
     let backgroundColor;
+    let outlineStyle = {};
+    let innerStyle = {};
 
     if(props.disabled){
         outlineColor = "outline-emerald-disabled-dark"
@@ -130,6 +152,8 @@ const SquareRadioButton = (props) => {
         if(props.selected){
             outlineColor = "outline-emerald-primary"
             backgroundColor = "bg-emerald-primary"
+            outlineStyle = {outlineColor: props.color}
+            innerStyle = {backgroundColor: props.color}
         }else{
             outlineColor = "outline-emerald-disabled"
             backgroundColor = "bg-emerald-transparent"
@@ -143,11 +167,15 @@ const SquareRadioButton = (props) => {
     }
 
     return (
-        <div className={`inline-flex flex-row items-center ${props.EmeraldStyle}`}
+        <div className={`inline-flex flex-row items-center m-2`}
             onClick={handleItemSelection}>
-            <div className={`w-[25px] h-[25px] m-2 p-[2px]
+            <div 
+                style={outlineStyle}
+                className={`w-[25px] h-[25px] mx-3 p-[2px]
                 rounded-sm outline outline-3 ${outlineColor}`}>
-                    <div className={`w-full h-full rounded-tn ${backgroundColor}`}></div>
+                    <div 
+                        style={innerStyle}
+                        className={`w-full h-full rounded-tn ${backgroundColor}`}></div>
             </div>
             <p className="ml-1">{props.option}</p>
         </div>
