@@ -1,5 +1,9 @@
 
-
+/**
+ * 
+ * @param {mainLogo, navItems, onMainLogoClick, onItemClick, itemEmeraldStyle} props 
+ * @returns 
+ */
 export const TopNav = (props) => {
 
     let mainLogo = props.mainLogo;
@@ -13,8 +17,8 @@ export const TopNav = (props) => {
                 navItems.map((item, index) => {
                     return (
                         <li key={index} onClick={() => props.onItemClick(index)}>
-                            <div className="w-auto inline-flex flex-row items-center m-2
-                                hover:bg-emerald-primary/30 rounded-lg transition-all">
+                            <div className={`w-auto inline-flex flex-row items-center m-2
+                                hover:bg-emerald-primary/30 rounded-lg transition-all ${props.itemEmeraldStyle}`}>
                                 <img src={item.icon} alt="nav icon" className="h-7 m-2"/>
                                 <p className="mr-3">{item.title}</p>
                             </div>

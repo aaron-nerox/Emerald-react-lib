@@ -35,6 +35,7 @@ let items = [
 export const Top = Template.bind({});
 Top.args = {
     mainLogo: Logo,
-    navItems: items
+    navItems: items,
+    itemEmeraldStyle: ''
 }
 
