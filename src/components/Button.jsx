@@ -7,7 +7,7 @@ const buttonStyle = `inline-flex flex-row items-center
 
 /**
  * 
- * @param {isDisabled, onClick, children, EmeraldStyle} props 
+ * @param {isDisabled, onClick, children, emeraldStyle} props 
  * @returns a normal button component that can contain a combination of text and icon
  */
 export const Button = (props) => {
@@ -23,7 +23,7 @@ export const Button = (props) => {
     return (
         <button 
             disabled={isDisabled}
-            className={`${props.EmeraldStyle} m-3 py-3 px-5 ${buttonStyle}`}
+            className={`${props.emeraldStyle} m-3 py-3 px-5 ${buttonStyle}`}
             onClick={()=> handleOnClick()}>
             {props.children}
         </button>
@@ -32,7 +32,7 @@ export const Button = (props) => {
 
 /**
  * 
- * @param {isDisabled, icon, onClick, EmeraldStyle} props 
+ * @param {isDisabled, icon, onClick, emeraldStyle} props 
  * @returns an icon button as a perfect square
  */
 export const IconifiedButton = (props) => {
@@ -45,7 +45,7 @@ export const IconifiedButton = (props) => {
 
     return (
         <button 
-            className={`${props.EmeraldStyle} m-3 p-4 ${buttonStyle}`}
+            className={`${props.emeraldStyle} m-3 p-4 ${buttonStyle}`}
             disabled={props.isDisabled}
             onClick={handleOnClick}>
             <ButtonIcon icon={props.icon}/>
@@ -55,7 +55,7 @@ export const IconifiedButton = (props) => {
 
 /**
  * 
- * @param {isDisabled, text, EmeraldStyle} props 
+ * @param {isDisabled, text, emeraldStyle} props 
  * @returns 
  */
 export const TextButton = (props) => {
@@ -69,7 +69,7 @@ export const TextButton = (props) => {
     return (
         <button 
             disabled={props.isDisabled}
-            className={`${props.EmeraldStyle} m-3 py-3 px-5 
+            className={`${props.emeraldStyle} m-3 py-3 px-5 
             text-emerald-primary hover:bg-emerald-primary-surface
             rounded-lg hover:text-emerald-primary-dark disabled:text-emerald-disabled 
             transition-all font-semibold`}

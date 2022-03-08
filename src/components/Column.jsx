@@ -1,9 +1,13 @@
 
 
+/**
+ * 
+ * @param {alignment, emeraldStyle, children} props 
+ * @returns 
+ */
 export const Column = (props) => {
-    const width = props.width;
     const alignment = props.alignment;
-    const style = props.EmeraldStyle;
+    const style = props.emeraldStyle;
 
     let cssAlignment;
 
@@ -16,9 +20,7 @@ export const Column = (props) => {
     }
 
     return (
-        <div
-            style={{width: width}}
-            className={`h-fit inline-flex flex-col ${style} ${cssAlignment}`}>
+        <div className={`h-fit inline-flex flex-col ${cssAlignment} ${style}`}>
             {props.children}
         </div>
     )

@@ -1,12 +1,12 @@
 
 /**
  * 
- * @param {EmeraldStyle, checked, disabled, name, value, onCheckChange} props 
+ * @param {emeraldStyle, checked, disabled, name, value, onCheckChange} props 
  * @returns 
  */
 export const RoundCheckBox = (props) => {
 
-    const style = props.EmeraldStyle;
+    const style = props.emeraldStyle;
     let tic;
 
     if(props.checked){
@@ -44,12 +44,12 @@ export const RoundCheckBox = (props) => {
 
 /**
  * 
- * @param {EmeraldStyle, ticColor, checked, disabled, name, value, onCheckChange} props 
+ * @param {emeraldStyle, ticColor, checked, disabled, name, value, onCheckChange} props 
  * @returns 
  */
 export const RoundLineCheckBox = (props) => {
 
-    const style = props.EmeraldStyle;
+    const style = props.emeraldStyle;
     let tic;
 
     if(props.checked){
@@ -88,12 +88,12 @@ export const RoundLineCheckBox = (props) => {
 
 /**
  * 
- * @param {EmeraldStyle, checked, disabled, name, value, onCheckChange} props 
+ * @param {emeraldStyle, checked, disabled, name, value, onCheckChange} props 
  * @returns 
  */
 export const SquareCheckBox = (props) => {
 
-    const style = props.EmeraldStyle;
+    const style = props.emeraldStyle;
     let tic;
 
     if(props.checked){
@@ -131,12 +131,12 @@ export const SquareCheckBox = (props) => {
 
 /**
  * 
- * @param {EmeraldStyle, ticColor, name, value, checked, disabled, onCheckChange} props 
+ * @param {emeraldStyle, ticColor, name, value, checked, disabled, onCheckChange} props 
  * @returns 
  */
 export const SquareLineCheckBox = (props) => {
 
-    const style = props.EmeraldStyle;
+    const style = props.emeraldStyle;
     let tic;
 
     if(props.checked){

@@ -38,6 +38,5 @@ const Template = (args) => {
 export const column = Template.bind({});
 column.args = {
     alignment : "center",
-    width: "",
-    EmeraldStyle: ""
+    emeraldStyle: ""
 }
