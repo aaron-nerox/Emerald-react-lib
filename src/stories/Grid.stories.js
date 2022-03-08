@@ -57,7 +57,5 @@ const Template = (args) => {
 export const grid = Template.bind({});
 grid.args = {
     count: 3,
-    width: '100%',
-    height: 'fit-content',
-    EmeraldStyle: ''
+    emeraldStyle: ''
 }

@@ -1,5 +1,10 @@
 
 
+/**
+ * 
+ * @param {count, height, width, emeraldStyle} props 
+ * @returns 
+ */
 export const Grid = (props) => {
 
     const cols = props.count;
@@ -12,7 +17,7 @@ export const Grid = (props) => {
     }
 
     return (
-        <div style={style} className={props.EmeraldStyle}>
+        <div style={style} className={props.emeraldStyle}>
             {props.children}
         </div>
     )
