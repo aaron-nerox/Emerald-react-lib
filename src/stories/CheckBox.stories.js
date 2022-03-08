@@ -45,6 +45,7 @@ Round.args = {
 export const RoundLine = TemplateRoundLine.bind({});
 RoundLine.args = {
     EmeraldStyle: '',
+    ticColor: '',
     checked: true,
     disabled: false,
     name: 'name',
@@ -65,6 +66,7 @@ Square.args = {
 export const SquareLine = TemplateSquareLine.bind({});
 SquareLine.args = {
     EmeraldStyle: '',
+    ticColor: '',
     checked: true,
     disabled: false,
     name: 'name',
