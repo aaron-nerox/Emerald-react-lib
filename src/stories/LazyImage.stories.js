@@ -16,5 +16,5 @@ export const lazyImage = Template.bind({});
 lazyImage.args = {
     src: image,
     alt: "alt text",
-    EmeraldStyle: "w-[100px] h-[100px] object-cover"
+    emeraldStyle: "w-[100px] h-[100px] object-cover"
 }
