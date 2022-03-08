@@ -23,11 +23,13 @@ const TemplateSquare = (args) => {
 export const Round = TemplateRound.bind({});
 Round.args = {
     toggled: true,
-    disabled: false
+    disabled: false,
+    emeraldColor: ""
 }
 
 export const Square = TemplateSquare.bind({});
 Square.args = {
     toggled: true,
-    disabled: false
+    disabled: false,
+    emeraldColor: ""
 }

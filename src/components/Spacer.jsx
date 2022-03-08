@@ -1,4 +1,9 @@
 
+/**
+ * 
+ * @param {space, orientation} props 
+ * @returns 
+ */
 export const Spacer = (props) => {
     let space = props.space;
     let orientation = props.orientation;
