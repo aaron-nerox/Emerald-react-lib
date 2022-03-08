@@ -39,5 +39,7 @@ export const Primary = Template.bind({})
 Primary.args = {
     activeItemIndex: 0,
     navItems: items,
-    header: <div></div>
+    header: <div></div>,
+    activeEmeraldStyle: '',
+    navColor: ''
 }
