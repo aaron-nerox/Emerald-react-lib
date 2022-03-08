@@ -1,17 +1,17 @@
 import './index.css';
 
 
-export { Button, IconifiedButton, TextButton } from './components/Button';
-export * from './components/CheckBox';
-export * from './components/ImageCheckBox';
-export * from './components/Input';
-export * from './components/SideNav';
-export * from './components/SideScaffold';
-export * from './components/TopNav';
-export * from './components/Spacer';
-export * from './components/Column';
-export * from './components/Row';
-export * from './components/Switch';
-export * from './components/LazyImage';
-export * from './components/RadioInput';
-export * from './components/Grid';
+export { Button, IconifiedButton, TextButton } from './components/Button.jsx';
+export * from './components/CheckBox.jsx';
+export * from './components/ImageCheckBox.jsx';
+export * from './components/Input.jsx';
+export * from './components/SideNav.jsx';
+export * from './components/SideScaffold.jsx';
+export * from './components/TopNav.jsx';
+export * from './components/Spacer.jsx';
+export * from './components/Column.jsx';
+export * from './components/Row.jsx';
+export * from './components/Switch.jsx';
+export * from './components/LazyImage.jsx';
+export * from './components/RadioInput.jsx';
+export * from './components/Grid.jsx';

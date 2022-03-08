@@ -88,15 +88,15 @@ const RadioButton = (props) => {
     let backgroundColor;
 
     if(props.disabled){
-        outlineColor = "outline-disabled-dark"
-        backgroundColor= "bg-disabled-dark"
+        outlineColor = "outline-emerald-disabled-dark"
+        backgroundColor= "bg-emerald-disabled-dark"
     }else{
         if(props.selected){
-            outlineColor = "outline-primary"
-            backgroundColor = "bg-primary"
+            outlineColor = "outline-emerald-primary"
+            backgroundColor = "bg-emerald-primary"
         }else{
-            outlineColor = "outline-disabled"
-            backgroundColor = "bg-transparent"
+            outlineColor = "outline-emerald-disabled"
+            backgroundColor = "bg-emerald-transparent"
         }
     }
 
@@ -124,15 +124,15 @@ const SquareRadioButton = (props) => {
     let backgroundColor;
 
     if(props.disabled){
-        outlineColor = "outline-disabled-dark"
-        backgroundColor= "bg-disabled-dark"
+        outlineColor = "outline-emerald-disabled-dark"
+        backgroundColor= "bg-emerald-disabled-dark"
     }else{
         if(props.selected){
-            outlineColor = "outline-primary"
-            backgroundColor = "bg-primary"
+            outlineColor = "outline-emerald-primary"
+            backgroundColor = "bg-emerald-primary"
         }else{
-            outlineColor = "outline-disabled"
-            backgroundColor = "bg-transparent"
+            outlineColor = "outline-emerald-disabled"
+            backgroundColor = "bg-emerald-transparent"
         }
     }
 

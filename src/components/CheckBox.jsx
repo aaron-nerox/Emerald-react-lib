@@ -7,9 +7,9 @@ export const RoundCheckBox = (props) => {
     if(props.checked){
         let stroke;
         if(!props.disabled){
-            stroke = "stroke-primary-surface"
+            stroke = "stroke-emerald-primary-surface"
         }else{
-            stroke = "stroke-disabled"
+            stroke = "stroke-emerald-disabled"
         }
         tic = <svg xmlns="http://www.w3.org/2000/svg" className={`absolute h-5 w-5 pointer-events-none ${stroke}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
@@ -28,8 +28,8 @@ export const RoundCheckBox = (props) => {
             onChange={props.onCheckChange}
             disabled={props.disabled}
             className={`h-7 w-7 m-2 rounded-full appearance-none
-            border-[2px] border-primary bg-primary-surface 
-            checked:bg-primary disabled:bg-disabled-dark disabled:border-disabled-dark 
+            border-[2px] border-emerald-primary bg-emerald-primary-surface 
+            checked:bg-emerald-primary disabled:bg-emerald-disabled-dark disabled:border-emerald-disabled-dark 
             transition-all ${style}`}
             />
             {tic}
@@ -45,9 +45,9 @@ export const RoundLineCheckBox = (props) => {
     if(props.checked){
         let stroke;
         if(!props.disabled){
-            stroke = "stroke-primary"
+            stroke = "stroke-emerald-primary"
         }else{
-            stroke = "stroke-disabled-dark"
+            stroke = "stroke-emerald-disabled-dark"
         }
         tic = <svg xmlns="http://www.w3.org/2000/svg" className={`absolute h-5 w-5 pointer-events-none ${stroke}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
@@ -66,8 +66,8 @@ export const RoundLineCheckBox = (props) => {
             onChange={props.onCheckChange}
             disabled={props.disabled}
             className={`h-7 w-7 m-2 rounded-full appearance-none
-            border-[2px] border-primary disabled:bg-disabled
-            disabled:border-disabled-dark 
+            border-[2px] border-emerald-primary disabled:bg-emerald-disabled
+            disabled:border-emerald-disabled-dark 
             transition-all ${style}`}
             />
             {tic}
@@ -83,9 +83,9 @@ export const SquareCheckBox = (props) => {
     if(props.checked){
         let stroke;
         if(!props.disabled){
-            stroke = "stroke-primary-surface"
+            stroke = "stroke-emerald-primary-surface"
         }else{
-            stroke = "stroke-disabled"
+            stroke = "stroke-emerald-disabled"
         }
         tic = <svg xmlns="http://www.w3.org/2000/svg" className={`absolute h-5 w-5 pointer-events-none ${stroke}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
@@ -104,9 +104,9 @@ export const SquareCheckBox = (props) => {
             onChange={props.onCheckChange}
             disabled={props.disabled}
             className={`h-7 w-7 m-2 rounded-md appearance-none
-            border-[2px] border-primary bg-primary-surface 
-            checked:bg-primary disabled:bg-disabled-dark disabled:border-disabled-dark 
-            transition-all ${style}`}
+            border-[2px] border-emerald-primary bg-emerald-primary-surface 
+            checked:bg-emerald-primary disabled:bg-emerald-disabled-dark 
+            disabled:border-emerald-disabled-dark transition-all ${style}`}
             />
             {tic}
         </div>
@@ -121,9 +121,9 @@ export const SquareLineCheckBox = (props) => {
     if(props.checked){
         let stroke;
         if(!props.disabled){
-            stroke = "stroke-primary"
+            stroke = "stroke-emerald-primary"
         }else{
-            stroke = "stroke-disabled-dark"
+            stroke = "stroke-emerald-disabled-dark"
         }
         tic = <svg xmlns="http://www.w3.org/2000/svg" className={`absolute h-5 w-5 pointer-events-none ${stroke}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
@@ -142,10 +142,8 @@ export const SquareLineCheckBox = (props) => {
             onChange={props.onCheckChange}
             disabled={props.disabled}
             className={`h-7 w-7 m-2 rounded-md appearance-none
-            border-[2px] border-primary disabled:bg-disabled
-            disabled:border-disabled-dark 
-            transition-all ${style}`}
-            />
+            border-[2px] border-emerald-primary disabled:bg-emerald-disabled
+            disabled:border-emerald-disabled-dark transition-all ${style}`}/>
             {tic}
         </div>
     )

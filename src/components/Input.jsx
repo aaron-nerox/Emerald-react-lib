@@ -19,9 +19,9 @@ import EyeSlashIcon from '../assets/icons/eye_slash.svg';
     }
 
     if(props.disabled){
-        bg = `bg-disabled`
+        bg = `bg-emerald-disabled`
     }else{
-        bg = `bg-primary-screen`
+        bg = `bg-emerald-primary-screen`
     }
 
     return (
@@ -36,8 +36,8 @@ import EyeSlashIcon from '../assets/icons/eye_slash.svg';
                 value={props.value}
                 placeholder={props.placeholder}
                 onChange={event => props.onValueChange(event)}
-                className="h-full w-full outline-none disabled:bg-disabled 
-                disabled:placeholder:text-disabled-dark rounded-lg"/>
+                className="h-full w-full outline-none disabled:bg-emerald-disabled 
+                disabled:placeholder:text-emerald-disabled-dark rounded-lg"/>
         </div>
     )
 }
@@ -57,9 +57,9 @@ export const PasswordInput = (props) => {
     }
 
     if(props.disabled){
-        bg = `bg-disabled`
+        bg = `bg-emerald-disabled`
     }else{
-        bg = `bg-primary-screen`
+        bg = `bg-emerald-primary-screen`
     }
 
     function togglePassword(){
@@ -84,8 +84,8 @@ export const PasswordInput = (props) => {
                 value={props.value}
                 placeholder={props.placeholder}
                 onChange={event => props.onValueChange(event)}
-                className="h-full w-full outline-none disabled:bg-disabled 
-                disabled:placeholder:text-disabled-dark rounded-lg"/>
+                className="h-full w-full outline-none disabled:bg-emerald-disabled 
+                disabled:placeholder:text-emerald-disabled-dark rounded-lg"/>
             <img src={eyeIcon} alt="eyeIcon" onClick={togglePassword} className="h-[20px] mx-3"/>
         </div>
     )
@@ -96,9 +96,9 @@ export const ActionInput = (props) => {
     let bg;
 
     if(props.disabled){
-        bg = `bg-disabled`
+        bg = `bg-emerald-disabled`
     }else{
-        bg = `bg-primary-screen`
+        bg = `bg-emerald-primary-screen`
     }
 
     return (
@@ -111,12 +111,13 @@ export const ActionInput = (props) => {
                 value={props.value}
                 placeholder={props.placeholder}
                 onChange={event => props.onValueChange(event)}
-                className="h-full w-full outline-none disabled:bg-disabled 
-                disabled:placeholder:text-disabled-dark rounded-lg"/>
+                className="h-full w-full outline-none disabled:bg-emerald-disabled 
+                disabled:placeholder:text-emerald-disabled-dark rounded-lg"/>
 
             <button disabled={props.disabled}
-                    className="min-w-[40px] aspect-square py-2 bg-primary-accent 
-                    hover:bg-primary disabled:bg-disabled rounded-lg transition-all">
+                    className="min-w-[40px] aspect-square py-2 bg-emerald-primary-accent 
+                    hover:bg-emerald-primary disabled:bg-emerald-disabled rounded-lg 
+                    transition-all">
                 <img src={props.actionIcon} alt="eyeIcon" 
                 onClick={props.onActionClick} className="h-[25px] m-auto"/>
             </button>

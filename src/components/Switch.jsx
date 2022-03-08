@@ -5,14 +5,14 @@ export const RoundSwitch = (props) => {
     let toggleTic;
 
     if(props.disabled){
-        toggleBody = "bg-disabled justify-items-start"
-        toggleTic = "bg-disabled-dark"
+        toggleBody = "bg-emerald-disabled justify-items-start"
+        toggleTic = "bg-emerald-disabled-dark"
     }else{
-        toggleTic = "bg-primary-screen"
+        toggleTic = "bg-emerald-primary-screen"
         if(props.toggled){
-            toggleBody = "justify-items-end bg-primary"
+            toggleBody = "justify-items-end bg-emerald-primary"
         }else{
-            toggleBody = "justify-items-start bg-disabled"
+            toggleBody = "justify-items-start bg-emerald-disabled"
         }
     }
 
@@ -38,14 +38,14 @@ export const SquareSwitch = (props) => {
     let toggleTic;
 
     if(props.disabled){
-        toggleBody = "bg-disabled justify-items-start"
-        toggleTic = "bg-disabled-dark"
+        toggleBody = "bg-emerald-disabled justify-items-start"
+        toggleTic = "bg-emerald-disabled-dark"
     }else{
-        toggleTic = "bg-primary-screen"
+        toggleTic = "bg-emerald-primary-screen"
         if(props.toggled){
-            toggleBody = "justify-items-end bg-primary"
+            toggleBody = "justify-items-end bg-emerald-primary"
         }else{
-            toggleBody = "justify-items-start bg-disabled"
+            toggleBody = "justify-items-start bg-emerald-disabled"
         }
     }
 

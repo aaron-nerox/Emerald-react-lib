@@ -2,16 +2,16 @@ module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}', './src/stories/*'],
   theme: {
     colors: {
-      'primary': '#02E1CE',
-      'primary-dark': '#00BCAC',
-      'primary-accent': '#83FFF4',
-      'primary-surface': '#DDFFFC',
-      'primary-screen': '#FEFEFE',
-      'primary-text' : '#222222',
-      'disabled': '#D9D9D9',
-      'disabled-dark': '#8C8C8C',
-      'primary-surface-black': "#222222",
-      'transparent': '#00000000'
+      'emerald-primary': '#02E1CE',
+      'emerald-primary-dark': '#00BCAC',
+      'emerald-primary-accent': '#83FFF4',
+      'emerald-primary-surface': '#DDFFFC',
+      'emerald-primary-screen': '#FEFEFE',
+      'emerald-primary-text' : '#222222',
+      'emerald-disabled': '#D9D9D9',
+      'emerald-disabled-dark': '#8C8C8C',
+      'emerald-primary-surface-black': "#222222",
+      'emerald-transparent': '#00000000'
     },
     extend: {
       borderRadius: {

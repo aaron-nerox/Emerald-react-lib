@@ -1,7 +1,7 @@
 
 const buttonStyle = `inline-flex flex-row items-center 
-            bg-primary hover:bg-primary-dark disabled:bg-disabled 
-            disabled:text-disabled-dark text-primary-screen 
+            bg-emerald-primary hover:bg-emerald-primary-dark disabled:bg-emerald-disabled 
+            disabled:text-emerald-disabled-dark text-emerald-primary-screen 
             rounded-lg transition-all font-semibold`
 
 
@@ -10,7 +10,7 @@ const buttonStyle = `inline-flex flex-row items-center
  * @param {isDisabled, onClick, children, EmeraldStyle} props 
  * @returns a normal button component that can contain a combination of text and icon
  */
-export const Button = (props, EmeraldStyle) => {
+export const Button = (props) => {
 
     const isDisabled = props.isDisabled;
     
@@ -23,7 +23,7 @@ export const Button = (props, EmeraldStyle) => {
     return (
         <button 
             disabled={isDisabled}
-            className={`m-3 py-3 px-5 ${buttonStyle} ${EmeraldStyle}`}
+            className={`${props.EmeraldStyle} m-3 py-3 px-5 ${buttonStyle}`}
             onClick={()=> handleOnClick()}>
             {props.children}
         </button>
@@ -45,7 +45,7 @@ export const IconifiedButton = (props) => {
 
     return (
         <button 
-            className={`m-3 p-4 ${buttonStyle} ${props.EmeraldStyle}`}
+            className={`${props.EmeraldStyle} m-3 p-4 ${buttonStyle}`}
             disabled={props.isDisabled}
             onClick={handleOnClick}>
             <ButtonIcon icon={props.icon}/>
@@ -69,9 +69,10 @@ export const TextButton = (props) => {
     return (
         <button 
             disabled={props.isDisabled}
-            className={`m-3 py-3 px-5 text-primary hover:bg-primary-surface
-            rounded-lg hover:text-primary-dark disabled:text-disabled transition-all 
-            font-semibold ${props.EmeraldStyle}`}
+            className={`${props.EmeraldStyle} m-3 py-3 px-5 
+            text-emerald-primary hover:bg-emerald-primary-surface
+            rounded-lg hover:text-emerald-primary-dark disabled:text-emerald-disabled 
+            transition-all font-semibold`}
             onClick={handleOnClick}>
             {props.text}
         </button>

@@ -6,9 +6,9 @@ export const SideNav = (props) => {
     let activeItemIndex = props.activeItemIndex;
 
     return (
-        <div className="w-[22%] h-screen max-h-screen overflow-y-auto p-2 bg-primary-accent/50
+        <div className="w-[22%] h-screen max-h-screen overflow-y-auto p-2 bg-emerald-primary-accent/50
         fixed left-0 top-0 inline-flex flex-col items-start">
-            <div className="w-full min-h-[150px] bg-primary-screen rounded-lg mx-auto 
+            <div className="w-full min-h-[150px] bg-emerald-primary-screen rounded-lg mx-auto 
                 mb-5 p-3 grid content-center justify-items-center">
                     {props.header}
             </div>
@@ -20,8 +20,8 @@ export const SideNav = (props) => {
                             className="w-full mx-auto">
 
                             <div className={`w-full mx-auto inline-flex flex-row 
-                                items-center m-2 py-1 hover:bg-primary-screen rounded-lg transition-all 
-                                ${(index === activeItemIndex)? "bg-primary-screen text-primary stroke-primary" : "stroke-primary-surface-black"}`}>
+                                items-center m-2 py-1 hover:bg-emerald-primary-screen rounded-lg transition-all 
+                                ${(index === activeItemIndex)? "bg-emerald-primary-screen text-emerald-primary stroke-emerald-primary" : "stroke-emerald-primary-surface-black"}`}>
                                 <div className="h-7 w-7 m-2">
                                     {item.icon}
                                 </div>

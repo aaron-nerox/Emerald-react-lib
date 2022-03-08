@@ -35,14 +35,14 @@ const Template3 = (args) => {
 export const Primary = Template.bind({})
 Primary.args = {
     isDisabled: false,
-    EmeraldStyle: '',
+    EmeraldStyle: "",
     Label: "Button"
 }
 
 export const IconPrimary = TemplateB.bind({})
 IconPrimary.args = {
     isDisabled: false,
-    EmeraldStyle: '',
+    EmeraldStyle: "",
     Label: "Button",
 }
 
