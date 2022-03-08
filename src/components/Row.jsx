@@ -1,10 +1,13 @@
 
-
+/**
+ * 
+ * @param {alignment, emeraldStyle, children} props 
+ * @returns 
+ */
 export const Row = (props) => {
 
-    const height = props.height;
     const alignment = props.alignment;
-    const style = props.EmeraldStyle;
+    const style = props.emeraldStyle;
 
     let cssAlignment;
 
@@ -21,8 +24,7 @@ export const Row = (props) => {
     }
 
     return (
-        <div style={{height: height}}
-            className={`inline-flex flex-row ${style} ${cssAlignment}`}>
+        <div className={`inline-flex flex-row ${style} ${cssAlignment}`}>
             {props.children}
         </div>
     )

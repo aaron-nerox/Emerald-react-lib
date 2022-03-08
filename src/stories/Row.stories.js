@@ -13,23 +13,23 @@ const Template = (args) => {
             <ImageCheckBox 
                 checked={false}
                 src={Image}
-                height="150px"
+                height="120px"
                 width="150px"
-                EmeraldStyle="m-2"
+                emeraldStyle="m-2"
                 />
             <ImageCheckBox 
                 checked={false}
                 src={Image}
-                height="150px"
+                height="100px"
                 width="150px"
-                EmeraldStyle="m-2"
+                emeraldStyle="m-2"
                 />
             <ImageCheckBox 
                 checked={false}
                 src={Image}
-                height="150px"
+                height="170px"
                 width="150px"
-                EmeraldStyle="m-2"
+                emeraldStyle="m-2"
                 />
         </Row>
     )
@@ -37,7 +37,6 @@ const Template = (args) => {
 
 export const row = Template.bind({});
 row.args = {
-    alignment: "top",
-    height: "",
-    EmeraldStyle: ""
+    alignment: "",
+    emeraldStyle: ""
 }
