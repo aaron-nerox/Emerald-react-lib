@@ -18,5 +18,7 @@ CheckableImage.args = {
     checked: true,
     src: Image,
     height: '200px',
-    width: '300px'
+    width: '300px',
+    emeraldStyle: '',
+    overlayStyle: ''
 }
