@@ -5,7 +5,7 @@ import EyeSlashIcon from '../assets/icons/eye_slash.svg';
 /**
  * 
  * @param {icon, disabled, type, name, value, placeholder
- * , onValueChange, EmeraldStyle} props 
+ * , onValueChange, emeraldStyle} props 
  * @returns an input that is fully customizable
  */
  export const Input = (props) => {
@@ -26,7 +26,7 @@ import EyeSlashIcon from '../assets/icons/eye_slash.svg';
 
     return (
         <div className={`h-fit m-3 px-3 py-3 inline-flex flex-row items-center 
-        rounded-lg ${bg} ${props.EmeraldStyle}`}>
+        rounded-lg ${bg} ${props.emeraldStyle}`}>
 
             {icon}
             <input 
@@ -42,7 +42,11 @@ import EyeSlashIcon from '../assets/icons/eye_slash.svg';
     )
 }
 
-
+/**
+ * 
+ * @param {icon, disabled, emeraldStyle, name, value, onValueChange, placeholder} props 
+ * @returns 
+ */
 export const PasswordInput = (props) => {
     let icon;
     let bg;
@@ -75,7 +79,7 @@ export const PasswordInput = (props) => {
 
     return (
         <div className={`h-fit px-3 py-3 m-3
-        inline-flex flex-row items-center rounded-lg ${bg} ${props.EmeraldStyle}`}>
+        inline-flex flex-row items-center rounded-lg ${bg} ${props.emeraldStyle}`}>
             {icon}
             <input 
                 disabled={props.disabled}
@@ -91,7 +95,12 @@ export const PasswordInput = (props) => {
     )
 }
 
-
+/**
+ * 
+ * @param {emeraldStyle, disabled, type, name, value, placeholder, onValueChange, 
+ * actionIcon, actionStyle, onActionClick} props 
+ * @returns 
+ */
 export const ActionInput = (props) => {
     let bg;
 
@@ -103,7 +112,7 @@ export const ActionInput = (props) => {
 
     return (
         <div className={`h-fit pl-3 pr-1 m-3 py-1
-        inline-flex flex-row items-center rounded-lg ${bg} ${props.EmeraldStyle}`}>
+        inline-flex flex-row items-center rounded-lg ${bg} ${props.emeraldStyle}`}>
             <input 
                 disabled={props.disabled}
                 type={props.type} 
@@ -115,9 +124,9 @@ export const ActionInput = (props) => {
                 disabled:placeholder:text-emerald-disabled-dark rounded-lg"/>
 
             <button disabled={props.disabled}
-                    className="min-w-[40px] aspect-square py-2 bg-emerald-primary-accent 
+                    className={`min-w-[40px] aspect-square py-2 bg-emerald-primary-accent 
                     hover:bg-emerald-primary disabled:bg-emerald-disabled rounded-lg 
-                    transition-all">
+                    transition-all ${props.actionStyle}`}>
                 <img src={props.actionIcon} alt="eyeIcon" 
                 onClick={props.onActionClick} className="h-[25px] m-auto"/>
             </button>

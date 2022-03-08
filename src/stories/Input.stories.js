@@ -31,7 +31,7 @@ const TemplateAction = (args) => {
 export const InputPrimary = Template.bind({});
 InputPrimary.args = {
     icon: icon,
-    EmeraldStyle: '',
+    emeraldStyle: '',
     disabled: false,
     name: 'name',
     value: '',
@@ -43,7 +43,7 @@ InputPrimary.args = {
 export const InputPassword = TemplatePassword.bind({});
 InputPassword.args = {
     icon: icon,
-    EmeraldStyle: '',
+    emeraldStyle: '',
     disabled: false,
     name: 'name',
     value: '',
@@ -53,7 +53,8 @@ InputPassword.args = {
 export const InputAction = TemplateAction.bind({});
 InputAction.args = {
     actionIcon: icon,
-    EmeraldStyle: '',
+    emeraldStyle: '',
+    actionStyle: '',
     disabled: false,
     name: 'name',
     value: '',
