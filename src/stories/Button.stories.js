@@ -25,7 +25,7 @@ const TemplateB = (args) => {
 }
 
 const Template2 = (args) => {
-    return <IconifiedButton {...args} />   
+    return <IconifiedButton {...args} />
 }
 
 const Template3 = (args) => {

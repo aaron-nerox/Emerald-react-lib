@@ -30,7 +30,7 @@ const Template = (args) => {
                 width="150px"
                 EmeraldStyle="m-2"
                 />
-        <ImageCheckBox 
+            <ImageCheckBox 
                 checked={false}
                 src={Image}
                 height="150px"

@@ -989,4 +989,40 @@ const Grid = props => {
   });
 };
 
-export { ActionInput, Button, Column, Grid, IconifiedButton, ImageCheckBox, Input, LazyImage, PasswordInput, RadioGroup, RoundCheckBox, RoundLineCheckBox, RoundSwitch, Row, SideNav, Spacer, SquareCheckBox, SquareLineCheckBox, SquareRadioGroup, SquareSwitch, TextButton, TopNav };
+function useScreenClass() {
+  let screenWidth = screen.availWidth;
+  const [screenClass, setScreenWidth] = useState(getScreenWidth());
+
+  window.onresize = () => setScreenWidth(getScreenWidth());
+
+  function getScreenWidth() {
+    if (screenWidth >= 1008) {
+      return 'LARGE';
+    } else if (screenWidth > 641 && screenWidth < 1008) {
+      return 'MEDIUM';
+    } else {
+      return 'SMALL';
+    }
+  }
+
+  return screenClass;
+}
+
+const AdaptiveContainer = props => {
+  let screenClass = useScreenClass();
+  const style = props.emeraldStyle;
+  let display = "flex-row";
+
+  if (screenClass === 'LARGE') {
+    display = "flex-row";
+  } else {
+    display = "flex-col";
+  }
+
+  return /*#__PURE__*/jsx("div", {
+    className: `inline-flex ${display} items-center ${style}`,
+    children: props.children
+  });
+};
+
+export { ActionInput, AdaptiveContainer, Button, Column, Grid, IconifiedButton, ImageCheckBox, Input, LazyImage, PasswordInput, RadioGroup, RoundCheckBox, RoundLineCheckBox, RoundSwitch, Row, SideNav, Spacer, SquareCheckBox, SquareLineCheckBox, SquareRadioGroup, SquareSwitch, TextButton, TopNav, useScreenClass };

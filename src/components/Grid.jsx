@@ -2,7 +2,7 @@
 
 /**
  * 
- * @param {count, height, width, emeraldStyle} props 
+ * @param {count, adaptiveCount height, width, emeraldStyle} props 
  * @returns 
  */
 export const Grid = (props) => {
