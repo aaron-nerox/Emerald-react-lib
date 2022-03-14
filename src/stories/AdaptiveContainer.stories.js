@@ -2,7 +2,7 @@ import { AdaptiveContainer, LazyImage } from "../index";
 import Image from '../assets/images/image.jpg';
 
 export default {
-    title: "Layouts/AdaptiveContainer",
+    title: "Layouts/Adaptive Container",
     component: AdaptiveContainer
 }
 
