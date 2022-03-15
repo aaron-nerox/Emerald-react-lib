@@ -18,3 +18,4 @@ export * from './components/Grid.jsx';
 export * from './components/AdaptiveContainer.jsx';
 export * from './components/DropDown.jsx';
 export * from './components/Divider.jsx';
+export * from './components/ToolTip';
