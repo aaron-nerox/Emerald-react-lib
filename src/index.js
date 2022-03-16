@@ -20,3 +20,4 @@ export * from './components/DropDown.jsx';
 export * from './components/Divider.jsx';
 export * from './components/ToolTip.jsx';
 export * from './components/Scrollable.jsx';
+export * from './components/Badge.jsx';
