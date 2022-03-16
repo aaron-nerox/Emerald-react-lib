@@ -1,4 +1,4 @@
-import { Grid } from '../index'
+import { Grid, AdaptiveGrid } from '../index'
 import { ImageCheckBox } from '../index';
 import Image from "../assets/images/image.jpg";
 
@@ -54,8 +54,61 @@ const Template = (args) => {
     </Grid>
 }
 
+const TemplateAdaptive = (args) => {
+    return <AdaptiveGrid {...args} >
+        <ImageCheckBox 
+                checked={false}
+                src={Image}
+                height="150px"
+                width="150px"
+                emeraldStyle="m-auto"
+                />
+            <ImageCheckBox 
+                checked={false}
+                src={Image}
+                height="150px"
+                width="150px"
+                emeraldStyle="m-auto"
+                />
+            <ImageCheckBox 
+                checked={false}
+                src={Image}
+                height="150px"
+                width="150px"
+                emeraldStyle="m-auto"
+                />
+            <ImageCheckBox 
+                checked={false}
+                src={Image}
+                height="150px"
+                width="150px"
+                emeraldStyle="m-auto"
+                />
+            <ImageCheckBox 
+                checked={false}
+                src={Image}
+                height="150px"
+                width="150px"
+                emeraldStyle="m-auto"
+                />
+            <ImageCheckBox 
+                checked={false}
+                src={Image}
+                height="150px"
+                width="150px"
+                emeraldStyle="m-auto"
+                />
+    </AdaptiveGrid>
+}
+
 export const grid = Template.bind({});
 grid.args = {
     count: 3,
+    emeraldStyle: ''
+}
+
+export const adaptiveGrid = TemplateAdaptive.bind({});
+adaptiveGrid.args = {
+    elementSize: '',
     emeraldStyle: ''
 }

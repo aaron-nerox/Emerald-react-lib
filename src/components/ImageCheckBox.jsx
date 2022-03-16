@@ -21,7 +21,7 @@ export const ImageCheckBox = (props) => {
     return (
         <div 
             style={{height: height, width: width}}
-            className={`grid grid-cols-1 grid-rows-1 place-content-center 
+            className={`grid place-content-center 
             place-items-center relative select-none overflow-clip ${props.emeraldStyle}`}
             onClick={props.onCheckChange}>
             <img
