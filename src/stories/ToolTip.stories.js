@@ -1,7 +1,7 @@
 import { ToolTip } from "../index";
 
 export default {
-    title: 'components/ToolTip',
+    title: 'components/Tool Tip',
     component: ToolTip
 }
 
@@ -25,5 +25,6 @@ const Template = (args) => {
 export const toolTip = Template.bind({});
 toolTip.args = {
     placement: 'top',
-    tip: ''
+    tip: '',
+    emeraldStyle: '!bg-emerald-primary'
 }

@@ -2,7 +2,7 @@ import { ImageCheckBox } from "../index";
 import Image from "../assets/images/image.jpg";
 
 export default {
-    title: "Components/CheckableImage",
+    title: "Components/Checkable Image",
     component: ImageCheckBox,
     argTypes : {
         onCheckChange: { action: "check changed"}

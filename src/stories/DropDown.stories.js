@@ -1,7 +1,7 @@
 import { DropDown } from "../index";
 
 export default {
-    title : 'components/DropDown',
+    title : 'components/Drop Down',
     component: DropDown,
     argTypes: {
         onOptionSelect: { action : 'option selected'}

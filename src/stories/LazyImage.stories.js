@@ -2,7 +2,7 @@ import { LazyImage } from '../index';
 import image from '../assets/images/image.jpg';
 
 export default {
-    title: "Components/LazyImage",
+    title: "Components/Lazy Image",
     component: LazyImage
 }
 
