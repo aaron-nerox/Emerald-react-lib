@@ -71,7 +71,14 @@ ReactDOM.render(<App />, document.getElementById('root'));
 - [ ] Add TypeScript support.
 
 ## Changelog
-The first version of emerald-react is out!
+
+- Version 1.1.0 is finally here.
+- <b> BREAKING CHANGE! </b> Changed the styling attribute from <b>EmeraldStyle</b> to <b>emeraldStyle</b>.
+- Added more container components like <b>AdaptiveGrid</b>, <b>AdaptiveContainer</b> and <b>Scrollable</b>.
+- Added more utility components like <b>Avatar</b>, <b>Badge</b>, <b>Divider</b> and <b>ToolTip</b>.
+- Added a simpler styling option for each component.
+- Total components up from 24 to 34.
+- Added support for common JavaScript alongside named ES modules.
 
 ## Licence
 This project is licensed under the terms of the [MIT LICENCE](https://github.com/TheX-ByAaron/Emerald-react-lib/LICENCE).
